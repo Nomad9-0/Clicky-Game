@@ -3,26 +3,15 @@ import "./style.css";
 
 function FriendCard(props) {
   return (
+    <div className="container">
+      <div className="row">
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        {/* On click, log image and name to new array */}
+        <img onClick={() => props.updateFriend(props.name)} name={props.name} src={props.image} alt="" />
       </div>
-      <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
-        </ul>
-      </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
+    </div>
+    </div>
     </div>
   );
 }
