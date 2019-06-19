@@ -1,6 +1,8 @@
 .nav {
-    background-color: rgb(0, 166, 208);
-    padding: 0px;
+    background-color: rgb(63, 66, 77);
+    padding-right: 900px;
+    padding-left: 900px;
+    padding-bottom: 30px;
     text-align: center;
     box-shadow: -2px 1px 10px rgb(115, 125, 160);
 }
@@ -22,7 +24,7 @@ h4 {
 }
   
 .scores {
-    color: black;
+    color: white;
     height: 50px;
     font-weight: 800;
     font-size: 80px;
